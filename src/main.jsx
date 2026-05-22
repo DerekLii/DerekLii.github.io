@@ -6,7 +6,6 @@ import "./styles.css";
 const contactLinks = [
   {
     label: "Toronto, ON",
-    href: "https://www.google.com/maps/search/?api=1&query=Toronto%2C%20ON",
     icon: MapPin,
   },
   {
@@ -16,17 +15,17 @@ const contactLinks = [
   },
   {
     label: "Email",
-    href: "mailto:derek@example.com",
+    href: "mailto:derekli.work@gmail.com",
     icon: Mail,
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/derek-li/",
+    href: "https://www.linkedin.com/in/derek-li7/",
     icon: Linkedin,
   },
   {
     label: "GitHub",
-    href: "https://github.com/",
+    href: "https://github.com/DerekLii",
     icon: Github,
   },
 ];
