@@ -99,9 +99,9 @@ const posts = [
     body: "I keep coming back to interfaces that do one thing clearly. Less chrome, better defaults, and enough personality to make the tool feel cared for.",
   },
   {
-    date: "May 12, 2026",
-    title: "What I am learning",
-    body: "Recently I have been spending more time with React, Vite, and API design. I like projects where the frontend looks calm because the data model underneath is doing its job.",
+    date: "June 16, 2026",
+    title: "Technical project manager",
+    body: "Both technical project managers have left the company, so I'll be taking over the responsibilities. I get to help the team make better decisions and keep the work moving forward. Keeping track of the work and helping the team stay organized is new to me, but I'm excited to take it on. I hope to keep learning more about the technical side of things and continue to grow as both a technical project manager and a developer.",
   },
 ];
 
