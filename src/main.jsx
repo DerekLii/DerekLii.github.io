@@ -89,9 +89,9 @@ const projects = [
 
 const posts = [
   {
-    date: "May 22, 2026",
-    title: "Starting fresh",
-    body: "I rebuilt this portfolio to feel lighter, faster, and easier to keep current. The next step is making the work and writing live together without getting in each other's way.",
+    date: "June 17, 2026",
+    title: "AI for report building",
+    body: "Had a meeting with the team today to discuss how we can use AI to help our report building process. It's incredibly time consuming for our analysts to build out the reports, so we're hoping to use AI to help speed up the process. However, first we had to understand the current process and understand the different components of the reports. We went through the different sections and talked about how we can use AI to help with each part.",
     image:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Laptop with code open on a desk",
@@ -100,6 +100,9 @@ const posts = [
     date: "June 17, 2026",
     title: "Certification meeting",
     body: "Had a meeting today with the testing company to go over certification regulations with our new PCB cases. It was interesting to learn about the different requirements and how they impact our development process. Trying to get into the habit of staying very organized, as regulations always require details to get certified. I drafted up most of the letter report response already, so now I'm just waiting on some more information before I send it off.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
+    imageAlt: "Meeting room with presentation screen",
   },
   {
     date: "June 16, 2026",
