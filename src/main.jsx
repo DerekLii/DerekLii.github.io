@@ -92,11 +92,14 @@ const posts = [
     date: "May 22, 2026",
     title: "Starting fresh",
     body: "I rebuilt this portfolio to feel lighter, faster, and easier to keep current. The next step is making the work and writing live together without getting in each other's way.",
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "Laptop with code open on a desk",
   },
   {
-    date: "May 18, 2026",
-    title: "Small interfaces",
-    body: "I keep coming back to interfaces that do one thing clearly. Less chrome, better defaults, and enough personality to make the tool feel cared for.",
+    date: "June 17, 2026",
+    title: "Certification meeting",
+    body: "Had a meeting today with the testing company to go over certification regulations with our new PCB cases. It was interesting to learn about the different requirements and how they impact our development process. Trying to get into the habit of staying very organized, as regulations always require details to get certified. I drafted up most of the letter report response already, so now I'm just waiting on some more information before I send it off.",
   },
   {
     date: "June 16, 2026",
@@ -161,6 +164,14 @@ function App() {
               </time>
               <h2>{post.title}</h2>
               <p>{post.body}</p>
+              {post.image ? (
+                <img
+                  src={post.image}
+                  alt={post.imageAlt ?? ""}
+                  className="post-image"
+                  loading="lazy"
+                />
+              ) : null}
             </article>
           ))}
         </section>
