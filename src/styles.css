@@ -88,6 +88,48 @@ a {
   transform: translateY(-1px);
 }
 
+.tab-row {
+  display: inline-flex;
+  gap: 6px;
+  margin-bottom: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.tab-button {
+  min-width: 96px;
+  min-height: 36px;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.94rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: lowercase;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.tab-button:hover,
+.tab-button:focus-visible {
+  color: var(--accent);
+  outline: none;
+}
+
+.tab-button.is-active {
+  background: #ffffff;
+  color: var(--ink);
+  box-shadow: 0 8px 20px rgba(24, 24, 27, 0.08);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -161,6 +203,45 @@ a {
   transform: scale(1.045);
 }
 
+.post-thread {
+  display: grid;
+  gap: 14px;
+  max-width: 760px;
+}
+
+.post-card {
+  border: 1px solid rgba(24, 24, 27, 0.1);
+  border-radius: 8px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 16px 34px rgba(24, 24, 27, 0.06);
+}
+
+.post-card time {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.84rem;
+  font-weight: 750;
+  line-height: 1.2;
+}
+
+.post-card h2 {
+  margin: 0 0 9px;
+  color: var(--ink);
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  font-weight: 780;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.post-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 @media (max-width: 860px) {
   .page-shell {
     width: min(100% - 28px, 720px);
@@ -198,11 +279,24 @@ a {
     font-size: 0.88rem;
   }
 
+  .tab-row {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .tab-button {
+    flex: 1;
+  }
+
   .project-grid {
     grid-template-columns: 1fr;
   }
 
   .project-card {
     min-height: 220px;
+  }
+
+  .post-card {
+    padding: 18px;
   }
 }

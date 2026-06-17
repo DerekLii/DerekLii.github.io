@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { FileText, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import "./styles.css";
@@ -87,7 +87,27 @@ const projects = [
   },
 ];
 
+const posts = [
+  {
+    date: "May 22, 2026",
+    title: "Starting fresh",
+    body: "I rebuilt this portfolio to feel lighter, faster, and easier to keep current. The next step is making the work and writing live together without getting in each other's way.",
+  },
+  {
+    date: "May 18, 2026",
+    title: "Small interfaces",
+    body: "I keep coming back to interfaces that do one thing clearly. Less chrome, better defaults, and enough personality to make the tool feel cared for.",
+  },
+  {
+    date: "May 12, 2026",
+    title: "What I am learning",
+    body: "Recently I have been spending more time with React, Vite, and API design. I like projects where the frontend looks calm because the data model underneath is doing its job.",
+  },
+];
+
 function App() {
+  const [activeTab, setActiveTab] = useState("projects");
+
   return (
     <main className="page-shell">
       <header className="site-header" aria-labelledby="page-title">
@@ -102,21 +122,49 @@ function App() {
         </nav>
       </header>
 
-      <section className="project-grid" aria-label="Projects">
-        {projects.map((project) => (
-          <a
-            key={project.name}
-            href={project.href}
-            className="project-card"
-            aria-label={`Open ${project.name}`}
+      <nav className="tab-row" aria-label="Portfolio sections">
+        {["projects", "blog"].map((tab) => (
+          <button
+            key={tab}
+            type="button"
+            className={`tab-button ${activeTab === tab ? "is-active" : ""}`}
+            aria-pressed={activeTab === tab}
+            onClick={() => setActiveTab(tab)}
           >
-            <img src={project.thumbnail} alt="" loading="lazy" />
-            <div className="project-card__footer">
-              <h2>{project.name}</h2>
-            </div>
-          </a>
+            {tab}
+          </button>
         ))}
-      </section>
+      </nav>
+
+      {activeTab === "projects" ? (
+        <section className="project-grid" aria-label="Projects">
+          {projects.map((project) => (
+            <a
+              key={project.name}
+              href={project.href}
+              className="project-card"
+              aria-label={`Open ${project.name}`}
+            >
+              <img src={project.thumbnail} alt="" loading="lazy" />
+              <div className="project-card__footer">
+                <h2>{project.name}</h2>
+              </div>
+            </a>
+          ))}
+        </section>
+      ) : (
+        <section className="post-thread" aria-label="Blog posts">
+          {posts.map((post) => (
+            <article key={`${post.date}-${post.title}`} className="post-card">
+              <time dateTime={new Date(post.date).toISOString()}>
+                {post.date}
+              </time>
+              <h2>{post.title}</h2>
+              <p>{post.body}</p>
+            </article>
+          ))}
+        </section>
+      )}
     </main>
   );
 }
