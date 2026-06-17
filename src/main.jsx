@@ -99,7 +99,7 @@ const posts = [
   {
     date: "June 17, 2026",
     title: "Certification meeting",
-    body: "Had a meeting today with the testing company to go over certification regulations with our new PCB cases. It was interesting to learn about the different requirements and how they impact our development process. Trying to get into the habit of staying very organized, as regulations always require details to get certified. I drafted up most of the letter report response already, so now I'm just waiting on some more information before I send it off.",
+    body: "Had a meeting today with the testing company to go over certification regulations with our new PCB cases. It was interesting to learn about the different requirements (UL vs CSA for HVAC and electrical equipment) and how they impact our development process. Trying to get into the habit of staying very organized, as regulations always require details to get certified. I drafted up most of the letter report response already, so now I'm just waiting on some more information before I send it off.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
     imageAlt: "Meeting room with presentation screen",
