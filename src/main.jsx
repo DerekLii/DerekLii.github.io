@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import { FileText, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import "./styles.css";
+import mqttpic from "./blog_images/mqtt.png";
 
 const contactLinks = [
   {
@@ -89,9 +90,21 @@ const projects = [
 
 const posts = [
   {
+    date: "June 18, 2026",
+    title: "IoT Learning Day 1 - MQTT pub/sub",
+    body: `Today I tinkered around with MQTT using Mosquitto pub/sub architecture on Ubuntu
+
+- MQTT Topics and how we can use them to filter and route messages to clients efficiently
+- MQTT Wildcards and how we can use them to subscribe to multiple channels of the same category
+- Sending JSON payloads instead of plain text messages to simulate real-world structured IoT data and metadata
+- Debugging messages to inspect packets exchanged between the client and the broker.`,
+    image: mqttpic,
+    imageAlt: "Laptop with code open on a desk",
+  },
+  {
     date: "June 17, 2026",
     title: "AI for report building",
-    body: "Had a meeting with the team today to discuss how we can use AI to help our report building process. It's incredibly time consuming for our analysts to build out the reports, so we're hoping to use AI to help speed up the process. However, first we had to understand the current process and understand the different components of the reports. We went through the different sections and talked about how we can use AI to help with each part.",
+    body: "Had a meeting with the team today to discuss how we can use AI to help our report building process. It's incredibly time consuming for our analysts to build out the reports, so we're hoping to use AI to help speed up the process. However, first we had to understand the current process and understand the different components of the reports. We went through the different sections and talked about how we can use AI to help with each part. Our plan is to start with a small proof of concept for the easier sections of the report process, and then expand and piece together the different components as we go. I'm excited to see how this will help our team and make the report building process more efficient. Similar to my last project, I'll be working with Google Sheets API again.",
     image:
       "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
     imageAlt: "Laptop with code open on a desk",
@@ -99,7 +112,7 @@ const posts = [
   {
     date: "June 17, 2026",
     title: "Certification meeting",
-    body: "Had a meeting today with the testing company to go over certification regulations with our new PCB cases. It was interesting to learn about the different requirements (UL vs CSA for HVAC and electrical equipment) and how they impact our development process. Trying to get into the habit of staying very organized, as regulations always require details to get certified. I drafted up most of the letter report response already, so now I'm just waiting on some more information before I send it off.",
+    body: "Had a meeting today with the testing company to go over certification regulations with our new PCB cases. It was interesting to learn about the different requirements (UL vs CSA for HVAC and electrical equipment) and how they impact our development process. Trying to get into the habit of staying very organized, as regulations always require specific details to get certified. I drafted up most of the letter report response already, so now I'm just waiting on some more information before I send it off.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
     imageAlt: "Meeting room with presentation screen",
