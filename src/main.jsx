@@ -101,25 +101,26 @@ const posts = [
 - Sending JSON payloads instead of plain text messages to simulate real-world structured IoT data and metadata
 - Debugging messages to inspect packets exchanged between the client and the broker.`,
     images: [
-  { src: mqttpic, alt: "MQTT terminal output" },
-  { src: mqttpic2, alt: "MQTT subscriber output" },
-],
-    imageAlt: "mqtt",
+      { src: mqttpic, alt: "MQTT terminal output" },
+      { src: mqttpic2, alt: "MQTT subscriber output" },
+    ],
   },
   {
     date: "June 17, 2026",
     title: "AI for report building",
     body: "Had a meeting with the team today to discuss how we can use AI to help our report building process. It's incredibly time consuming for our analysts to build out the reports, so we're hoping to use AI to help speed up the process. However, first we had to understand the current process and understand the different components of the reports. We went through the different sections and talked about how we can use AI to help with each part. Our plan is to start with a small proof of concept for the easier sections of the report process, and then expand and piece together the different components as we go. I'm excited to see how this will help our team and make the report building process more efficient. Similar to my last project, I'll be working with Google Sheets API again.",
-    image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Laptop with code open on a desk",
+    images: [
+      {
+        src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+        alt: "Laptop with code open on a desk",
+      },
+    ],
   },
   {
     date: "June 17, 2026",
     title: "Certification meeting",
     body: "Had a meeting today with the testing company to go over certification regulations with our new PCB cases. It was interesting to learn about the different requirements (UL vs CSA for HVAC and electrical equipment) and how they impact our development process. Trying to get into the habit of staying very organized, as regulations always require specific details to get certified. I drafted up most of the letter report response already, so now I'm just waiting on some more information before I send it off.",
-    image: letter_report,
-    imageAlt: "Letter report response",
+    images: [{ src: letter_report, alt: "Letter report response" }],
   },
   {
     date: "June 16, 2026",
@@ -184,14 +185,15 @@ function App() {
               </time>
               <h2>{post.title}</h2>
               <p>{post.body}</p>
-              {post.image ? (
+              {post.images?.map((image) => (
                 <img
-                  src={post.image}
-                  alt={post.imageAlt ?? ""}
+                  key={image.src}
+                  src={image.src}
+                  alt={image.alt ?? ""}
                   className="post-image"
                   loading="lazy"
                 />
-              ) : null}
+              ))}
             </article>
           ))}
         </section>
