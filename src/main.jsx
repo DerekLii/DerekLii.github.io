@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { FileText, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import "./styles.css";
 import mqttpic from "./blog_images/mqtt.png";
+import mqttpic2 from "./blog_images/mqtt2.png";
 import letter_report from "./blog_images/letter_report.png";
 
 const contactLinks = [
@@ -101,6 +102,7 @@ const posts = [
 - Debugging messages to inspect packets exchanged between the client and the broker.`,
     image: mqttpic,
     imageAlt: "mqtt",
+    image: mqttpic2,
   },
   {
     date: "June 17, 2026",
