@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { FileText, Github, Linkedin, Mail, MapPin } from "lucide-react";
 import "./styles.css";
 import mqttpic from "./blog_images/mqtt.png";
+import letter_report from "./blog_images/letter_report.png";
 
 const contactLinks = [
   {
@@ -99,7 +100,7 @@ const posts = [
 - Sending JSON payloads instead of plain text messages to simulate real-world structured IoT data and metadata
 - Debugging messages to inspect packets exchanged between the client and the broker.`,
     image: mqttpic,
-    imageAlt: "Laptop with code open on a desk",
+    imageAlt: "mqtt",
   },
   {
     date: "June 17, 2026",
@@ -113,9 +114,8 @@ const posts = [
     date: "June 17, 2026",
     title: "Certification meeting",
     body: "Had a meeting today with the testing company to go over certification regulations with our new PCB cases. It was interesting to learn about the different requirements (UL vs CSA for HVAC and electrical equipment) and how they impact our development process. Trying to get into the habit of staying very organized, as regulations always require specific details to get certified. I drafted up most of the letter report response already, so now I'm just waiting on some more information before I send it off.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
-    imageAlt: "Meeting room with presentation screen",
+    image: letter_report,
+    imageAlt: "Letter report response",
   },
   {
     date: "June 16, 2026",
