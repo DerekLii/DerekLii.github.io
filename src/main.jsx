@@ -52,43 +52,7 @@ const projects = [
     thumbnail:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
   },
-  {
-    name: "Data Lens",
-    href: "https://example.com",
-    thumbnail:
-      "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Task Flow",
-    href: "https://example.com",
-    thumbnail:
-      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Cloud Notes",
-    href: "https://example.com",
-    thumbnail:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Fit Tracker",
-    href: "https://example.com",
-    thumbnail:
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Market Pulse",
-    href: "https://example.com",
-    thumbnail:
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Study Buddy",
-    href: "https://example.com",
-    thumbnail:
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80",
-  },
-];
+]
 
 const posts = [
   {
