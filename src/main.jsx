@@ -100,9 +100,11 @@ const posts = [
 - MQTT Wildcards and how we can use them to subscribe to multiple channels of the same category
 - Sending JSON payloads instead of plain text messages to simulate real-world structured IoT data and metadata
 - Debugging messages to inspect packets exchanged between the client and the broker.`,
-    image: mqttpic,
+    images: [
+  { src: mqttpic, alt: "MQTT terminal output" },
+  { src: mqttpic2, alt: "MQTT subscriber output" },
+],
     imageAlt: "mqtt",
-    image: mqttpic2,
   },
   {
     date: "June 17, 2026",
