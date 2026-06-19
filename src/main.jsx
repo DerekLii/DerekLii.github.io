@@ -63,7 +63,8 @@ const posts = [
 - MQTT Topics and how we can use them to filter and route messages to clients efficiently
 - MQTT Wildcards and how we can use them to subscribe to multiple channels of the same category
 - Sending JSON payloads instead of plain text messages to simulate real-world structured IoT data and metadata
-- Debugging messages to inspect packets exchanged between the client and the broker.`,
+- Debugging messages to inspect packets exchanged between the client and the broker.
+- How to configure listeners and add rules by modifying the configuration files`,
     images: [
       { src: mqttpic, alt: "MQTT terminal output" },
       { src: mqttpic2, alt: "MQTT subscriber output" },
