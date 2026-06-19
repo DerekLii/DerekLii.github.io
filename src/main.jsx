@@ -56,6 +56,13 @@ const projects = [
 
 const posts = [
   {
+    date: "June 19, 2026",
+    title: "Sample pick up day and report generator work",
+    body: `Today was a different day than usual. I had to drive early morning and pick up sample products from the testing facility, so I could make some adjustments to them at the office. I decided that I'll do all that handiwork this weekend, so that I can focus on the initial steps for the report generator by creating some generic templates using Python Google Sheets APIbased on what I've learned so far about how the reports look. 
+    
+    The formulas were pretty standard and consistent throughout the sheets, so it was mostly just a matter of translating them into Python and making sure I can populate the right cells with the right data. I also started drafting up some documentation for how to use the report generator, so that it's easier for other people on the team to use and understand how it works. Overall, it was a productive day and I'm excited to see how the report generator will help our team in the long run!`,
+  },
+  {
     date: "June 18, 2026",
     title: "IoT Learning Day 1 - MQTT pub/sub",
     body: `Today I tinkered around with MQTT using Mosquitto pub/sub architecture on Ubuntu
