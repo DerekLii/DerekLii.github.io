@@ -139,6 +139,8 @@ function App() {
             <a
               key={project.name}
               href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="project-card"
               aria-label={`Open ${project.name}`}
             >
