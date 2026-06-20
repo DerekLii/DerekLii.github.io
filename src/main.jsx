@@ -35,20 +35,8 @@ const contactLinks = [
 
 const projects = [
   {
-    name: "Project Atlas",
-    href: "https://example.com",
-    thumbnail:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Campus Connect",
-    href: "https://example.com",
-    thumbnail:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    name: "Portfolio Engine",
-    href: "https://example.com",
+    name: "Simulating IoT Pipeline in Python",
+    href: "https://github.com/DerekLii/IoT-Pipeline-in-Python",
     thumbnail:
       "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
   },
@@ -56,7 +44,7 @@ const projects = [
 
 const posts = [
     {
-    date: "June 20, 2026",
+    date: "June 19, 2026",
     title: "IoT Learning Day 2 - IoT Pipeline in Python",
     body: `Today I imitated a IoT pipeline in Python using MQTT, MongoDB.
 
