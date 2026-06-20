@@ -55,12 +55,25 @@ const projects = [
 ]
 
 const posts = [
+    {
+    date: "June 20, 2026",
+    title: "IoT Learning Day 2 - IoT Pipeline in Python",
+    body: `Today I imitated a IoT pipeline in Python using MQTT, MongoDB.
+
+- Publisher sends sensor data, the broker routes it, and subscriber receives it in real time and immediately processes it (edge layer processing)`,
+    // images: [
+    //   { src: mqttpic, alt: "MQTT terminal output" },
+    //   { src: mqttpic2, alt: "MQTT subscriber output" },
+    // ],
+  },
   {
     date: "June 19, 2026",
     title: "Sample pick up day and report generator work",
     body: `Today was a different day than usual. I had to drive early morning and pick up sample products from the testing facility, so I could make some adjustments to them at the office. I decided that I'll do all that handiwork this weekend, so that I can focus on the initial steps for the report generator by creating some generic templates using Python Google Sheets APIbased on what I've learned so far about how the reports look. 
     
-    The formulas were pretty standard and consistent throughout the sheets, so it was mostly just a matter of translating them into Python and making sure I can populate the right cells with the right data. I also started drafting up some documentation for how to use the report generator, so that it's easier for other people on the team to use and understand how it works. Overall, it was a productive day and I'm excited to see how the report generator will help our team in the long run!`,
+    The formulas were pretty standard and consistent throughout the sheets, so it was mostly just a matter of translating them into Python and making sure I can populate the right cells with the right data. I also started drafting up some documentation for how to use the report generator, so that it's easier for other people on the team to use and understand how it works. Overall, it was a productive day and I'm excited to see how the report generator will help our team in the long run!
+    
+    I also had to do an inventory check for one of our sample products, which was a bit of a hassle. I had to go through all the different components and update the current stock of our main manufacturers, as well as update the price per unit. It was a good reminder of how important it is to stay organized and keep track of our inventory, especially as we continue to grow and take on more projects.`,
   },
   {
     date: "June 18, 2026",
