@@ -40,7 +40,7 @@ const projects = [
     name: "Simulating IoT Pipeline in Python",
     href: "https://github.com/DerekLii/IoT-Pipeline-in-Python",
     thumbnail:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
+      iot_pipeline1,
   },
 ]
 
