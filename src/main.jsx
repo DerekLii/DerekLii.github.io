@@ -5,6 +5,8 @@ import "./styles.css";
 import mqttpic from "./blog_images/mqtt.png";
 import mqttpic2 from "./blog_images/mqtt2.png";
 import letter_report from "./blog_images/letter_report.png";
+import iot_pipeline1 from "./blog_images/iot_pipeline1.png";
+import iot_pipeline2 from "./blog_images/iot_pipeline2.png";
 
 const contactLinks = [
   {
@@ -43,16 +45,29 @@ const projects = [
 ]
 
 const posts = [
+  {
+    date: "June 20, 2026",
+    title: "IoT Learning Day 3 - Completing the IoT Pipeline in Python",
+    body: `I finished the IoT Pipeline in Python by adding in a few extra features.
+
+- I needed an application layer so I added a visualization component using Matplotlib to create graphs of the sensor data over time, which is a common use case for IoT data analysis.
+- I also added an actuator component that listens for specific conditions in the sensor data (e.g., if the temperature exceeds a certain threshold) and then simulates sending a command back to the publisher to adjust the sensor's behavior (e.g., turn on a fan). This adds an element of real-time control to the pipeline, which is a key aspect of many IoT applications.
+- Overall, it was a great learning experience to build out the entire pipeline and see how the different components interact with each other. It also gave me a better understanding of how IoT systems work in practice and the challenges involved in building and maintaining them.`,
+    images: [
+      { src: iot_pipeline2, alt: "MQTT terminal output" },
+    ],
+  },
     {
     date: "June 19, 2026",
     title: "IoT Learning Day 2 - IoT Pipeline in Python",
-    body: `Today I imitated a IoT pipeline in Python using MQTT, MongoDB.
+    body: `Today I began working on simulating an IoT pipeline in Python using MQTT, MongoDB.
 
-- Publisher sends sensor data, the broker routes it, and subscriber receives it in real time and immediately processes it (edge layer processing)`,
-    // images: [
-    //   { src: mqttpic, alt: "MQTT terminal output" },
-    //   { src: mqttpic2, alt: "MQTT subscriber output" },
-    // ],
+- Publisher sends sensor data, the broker routes it, and subscriber receives it in real time and immediately processes it (edge layer processing)
+- Subscriber then stores the processed data in MongoDB for further analysis and visualization (cloud layer storage)
+- I was working on the pipeline in WSL and had some issues with the MQTT broker configuration, but I was able to troubleshoot and resolve them by checking the configuration files and making sure the correct ports were open. I also had to make sure that the publisher and subscriber were configured correctly to connect to the broker. Overall, it was a good learning experience, especially for understanding interfaces and ports between WSL and the Windows host!`,
+    images: [
+      { src: iot_pipeline1, alt: "MQTT terminal output" },
+    ],
   },
   {
     date: "June 19, 2026",
