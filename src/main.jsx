@@ -47,9 +47,11 @@ const projects = [
 const posts = [
   {
     date: "June 21, 2026",
-    title: "Technical Project Manager - Inventory checks, cleaning up the office, finishing product samples",
-    body: `I had to do some inventory checks to update our stock levels, since we're not sure what we need to order.
-  I also had to do some cleaning around the office, which was a bit of a hassle but it was nice to have a clean and organized workspace. It was also extremely important since we're going to have big investors coming in soon and we need to stay professional. I also finished up some product samples that we needed to send out for testing, which involved some handiwork and attention to detail. Overall, it was a productive day and I'm glad I was able to get everything done!
+    title: "Technical Project Manager - Finishing up product samples.",
+    body: `
+  Today I went into office to fix the product samples. I had to solder off the fuses on the PCBs since they didn’t align with the conformities for the certification we need. While putting the samples together, I noticed that the box couldn’t fully close easily which might cause an issue for us later on, I’ll keep note of that and make sure to ask questions about it later to the testing company so that we can make the proper adjustments quickly if needed instead of it blowing up in our faces later.
+
+We got a quote from a manufacturer about price raises for one of our important products. It makes sense to order more now before this price hike kills us later.
   `,
   },
   {
