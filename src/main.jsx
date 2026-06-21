@@ -46,6 +46,13 @@ const projects = [
 
 const posts = [
   {
+    date: "June 21, 2026",
+    title: "Technical Project Manager - Inventory checks, cleaning up the office, finishing product samples",
+    body: `I had to do some inventory checks to update our stock levels, since we're not sure what we need to order.
+  I also had to do some cleaning around the office, which was a bit of a hassle but it was nice to have a clean and organized workspace. It was also extremely important since we're going to have big investors coming in soon and we need to stay professional. I also finished up some product samples that we needed to send out for testing, which involved some handiwork and attention to detail. Overall, it was a productive day and I'm glad I was able to get everything done!
+  `,
+  },
+  {
     date: "June 20, 2026",
     title: "IoT Learning Day 3 - Completing the IoT Pipeline in Python",
     body: `I finished the IoT Pipeline in Python by adding in a few extra features.
