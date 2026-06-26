@@ -7,6 +7,8 @@ import mqttpic2 from "./blog_images/mqtt2.png";
 import letter_report from "./blog_images/letter_report.png";
 import iot_pipeline1 from "./blog_images/iot_pipeline1.png";
 import iot_pipeline2 from "./blog_images/iot_pipeline2.png";
+import freecad1 from "./blog_images/freecad1.png";
+import freecad2 from "./blog_images/freecad2.png";
 
 const contactLinks = [
   {
@@ -45,9 +47,43 @@ const projects = [
 ]
 
 const posts = [
+   {
+    date: "June 28, 2026",
+    title: "Learning CAD and PCBs",
+    body: `Spent the entire day learning about freeCAD and PCBs, so that I can have a better understanding of the firmware and board updates that our external team does. I also want to get extremely good at CAD so that I can just change the designs myself if needed and hand it over to our manufacturing contracters.`,
+  },
+  {
+    date: "June 27, 2026",
+    title: "Learning Docker and its advanced concepts.",
+    body: `Spent the entire day completing a course on Docker. As a developer, I never had the chance to work with Docker in all my internship experiences. As a product manager, I feel like it's important for me to know so that I can understand what needs to be done and how to implement in effectively if it's needed in the future for cloud projects.`,
+  },
+  {
+    date: "June 26, 2026",
+    title: "CAD Design - Adjusting product samples for certification",
+    body: `I worked on CAD design for the first time in 4 years today. I had to make some adjustments to the product samples that we have, so that they can be certified. I learned how to use CAD in the morning and then made rough designs on the design. Hopefully, it's good enough to get approved by the manufacturing company. They just needed a rough drawing to understand the adjustments that we need to make to get the product certified. I had fun using CAD again, and I'm actually looking forward to getting better at it.`,
+    images: [
+      { src: freecad1, alt: "FreeCAD design interface" },
+      { src: freecad2, alt: "FreeCAD model preview" },
+    ],
+  },
+    {
+    date: "June 24, 2026",
+    title: "Soldering",
+    body: `Tried soldering a RS-485 transceiver today onto the PCB, it was no good. I just don't have the equipment for it. The IC component is extremely small and our soldering tip isn't high quality enough, the fine tip doesn't even get hot enough so I don't have precision. It's a lot more difficult than simply soldering wires together. Surface mount soldering is extremely difficult compared to simple pin hole soldering. I've reached out to our contractor and they said they can solder it in for us, I'll have to drive there to deliver the components though.`,
+  },
+    {
+    date: "June 23, 2026",
+    title: "Emails... Emails... Emails...",
+    body: `Lots of emails today back and forth with multiple different contractors and manufacturers. I had to make sure that we have all the information we need to move forward with our projects, and that we're on the same page with everyone involved. It's a lot of back and forth, and I've been asking a lot of questions to make sure I get the details down right. I'm doing my best to stay organized and keep our CEO updated on the process.`,
+  },
+    {
+    date: "June 22, 2026",
+    title: "Reading over revision notes, schematics, bill of materials, etc.",
+    body: `Updating our firmware is a top priority for our team, so I spent most of the day talking things over with our external firmware team. They sent me the revision notes that's been going back and forth for 2 years, I feel like this has taken too much time and I want to make sure we can get this done as soon as possible. I also had to read over the schematics and bill of materials for the product samples that we have, so that I can understand what adjustments we need to make to get them certified. It's a lot of technical information to take in, but I'm doing my best to stay organized and keep track of everything so that we can move forward with our projects efficiently.`,
+  },
   {
     date: "June 21, 2026",
-    title: "Technical Project Manager - Finishing up product samples.",
+    title: "Putting together product samples.",
     body: `
   Today I went into office to fix the product samples. I had to solder off the fuses on the PCBs since they didn’t align with the conformities for the certification we need. While putting the samples together, I noticed that the box couldn’t fully close easily which might cause an issue for us later on, I’ll keep note of that and make sure to ask questions about it later to the testing company so that we can make the proper adjustments quickly if needed instead of it blowing up in our faces later.
 
@@ -121,7 +157,7 @@ We got a quote from a manufacturer about price raises for one of our important p
   },
   {
     date: "June 16, 2026",
-    title: "Technical project manager",
+    title: "Product Manager",
     body: "Both technical project managers have left the company, so I'll be taking over the responsibilities. I get to help the team make better decisions and keep the work moving forward. Keeping track of the work and helping the team stay organized is new to me, but I'm excited to take it on. I hope to keep learning more about the technical side of things and continue to grow as both a technical project manager and a developer.",
   },
 ];
